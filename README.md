@@ -1,5 +1,21 @@
+# 게시판 API
+
+- npm install
+- npm run start:dev
+- package.json과 같은 최상단 레벨에 .env.dev 파일 필요
+
+```
+SALT = 비밀번호를 암호화 할때 사용할 값 입력
+JOKER_DB_HOST=디비주소 입력
+JOKER_DB_USERNAME=디비유저이름 입력
+JOKER_DB_PASSWORD=디비비밀번호 입력
+JOKER_DB_DATABASE=디비데이터베이스 입력
+```
+
 - [x] DB 스키마 생성 스크립트  
        board.entity.ts
+      comment.entity.ts
+      keyword.entity.ts
 
 - [x] 게시글 작성 API  
        `POST http://localhost:4000/board/write`  
